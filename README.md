@@ -83,6 +83,11 @@ your preference if you know what you're doing.
     - `TSB_Y` is the vertical count which represents the number of scenes you want to control.
   - For this to work properly you must manually add or remove rows/columns for `SCENELAUNCH` and `CLIPNOTEMAP` 
   sections in [MIDI_Map.py](https://github.com/laidlaw42/Ableton-Live-MIDI-Remote-Scripts/blob/YourControllerName/YourControllerName/MIDI_Map.py).
+- If using Live 11 (sundaynightcoffee updated, PR'd and tested on 11.0.2)
+  - Use updated scripts, Ableton 11 uses Python 3 instead of Python 2, which has a few diffs in syntax. 
+  - I used python's 2to3 command to update all the scripts in this repo using 2to3 * -w within the YouControllerName directory and deleted all the .bak files. 
+  - Follow the same steps as you would for other versions, just be sure to use this 2to3'd version instead.
+  - you can also copy the MIDI_map.py between versions, you dont have to rewrite it as these are just variables that python looks at.
 
 
 ---
